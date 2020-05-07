@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Tip Calculator</title>
 </head>
 <body>
     <h1>Tip Calculator</h1>
@@ -13,28 +13,28 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg">Total Bill</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <input id="bill-amount" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+      </div>
+      <br>
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">% Tip</span>
+        </div>
+        <input id="tip-percent" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
       </div>
       <br>
       <div class="input-group input-group-lg">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-lg"># of People in your party</span>
         </div>
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <input id="num-people" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
       </div>
       <br>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          % Tip
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">8%</a>
-          <a class="dropdown-item" href="#">10%</a>
-          <a class="dropdown-item" href="#">12%</a>
-          <a class="dropdown-item" href="#">15%</a>
-          <a class="dropdown-item" href="#">20%</a>
-        </div>
-      </div>
+
+
+      <button type="button" class="btn btn-primary btn-lg" onclick="calculate();">Calculate</button>
+
+      <p id="total-answer"></p>
 
 
 
